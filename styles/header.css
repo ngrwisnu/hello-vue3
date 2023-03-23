@@ -1,0 +1,17 @@
+header {
+  padding: 1rem 0;
+}
+
+header span {
+  font-size: 32px;
+}
+
+header .nav-links {
+  flex-basis: 50%;
+}
+
+header ul {
+  list-style-type: none;
+  text-decoration: none;
+  font-style: none;
+}
