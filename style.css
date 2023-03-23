@@ -9,3 +9,10 @@ body {
 h3 {
   margin-bottom: 2rem;
 }
+
+.header .qty {
+  background-color: violet;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 100px;
+}
