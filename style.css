@@ -1,0 +1,11 @@
+body {
+  margin: 4rem 1rem;
+}
+
+.card {
+  max-width: 200px;
+}
+
+h3 {
+  margin-bottom: 2rem;
+}
