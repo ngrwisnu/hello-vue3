@@ -24,7 +24,7 @@
     <header class="d-flex justify-content-between align-items-center">
       <span>Vue3</span>
       <div class="nav-links">
-        <ul class="d-flex justify-content-between">
+        <ul class="d-flex justify-content-end">
           <li>
             <a href="../index.html">Chapter 1</a>
           </li>
@@ -36,7 +36,7 @@
     </header>
     <!-- end of Header -->
 
-    <div id="parsed-text">
+    <div id="parsed-text" style="padding-top: 5rem">
       <div class="">
         <h1>Interpolation Text</h1>
       </div>
@@ -53,6 +53,43 @@
       <div class="parsed-text">
         <h6>Parsed Text:</h6>
         <p v-html="value"></p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- * Computed Property -->
+    <div id="computed-section">
+      <div class="">
+        <h1>Computed Property</h1>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="title-field d-flex flex-column w-50 mb-3">
+            <label for="">Title</label>
+            <input type="text" v-model="placeholder" />
+          </div>
+          <div class="d-flex flex-column gap-4">
+            <div class="slug">
+              <h6>Slug</h6>
+              <span>{{ computedTitle }}</span>
+            </div>
+            <div class="counter1">
+              <h6>Counter from Method</h6>
+              <span>{{ counterFromMethod() }}</span>
+            </div>
+            <div class="counter2">
+              <h6>Counter from Computed</h6>
+              <!-- <span class="me-3">{{ count }}</span> -->
+              <span class="me-3">{{ counterFromComputed }}</span>
+              <button @click="increment()">+1</button>
+              <small class="d-block mt-2" style="color: red"
+                >note: This value will not changed while the title input
+                changed. This happened BECAUSE the count value in data did not
+                change even thought the page is re-rendered.</small
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <hr />
